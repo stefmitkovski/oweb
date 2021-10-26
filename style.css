@@ -95,16 +95,20 @@ h1 {
 }
 
 .blogging{
-    max-width: 260px;
+    max-width: 250px;
     min-height: 350px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-color: black;
     display: inline-block;
-    padding: 2em 1em;
+    padding: 2em 2em;
     margin: 1em 4em;
 }
 
-.learn-more {
+.blogging h3 {
+    text-align: center;
+}
+
+.fancy-button {
     display: inline-block;
     padding: 0.5em 1.7em;
     border: 0.16em solid rgba(255, 255, 255, 0);
