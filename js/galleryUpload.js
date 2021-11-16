@@ -63,9 +63,13 @@ function upload() {
     galleryImage.appendChild(text);
 
     postbtn = document.createElement("button");
+    postbtn.setAttribute("class","post");
     postbtn.innerHTML = "Post";
+    postbtn.addEventListener("click", post, false);
 
     galleryImage.appendChild(postbtn);
+
+    galleryImage.appendChild(document.createElement("div"));
 
     gallery.insertBefore(galleryImage,uploadForm);
     }
