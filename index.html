@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Stefan Mitkovski</title>
   </head>
   <body>
@@ -19,52 +22,71 @@
       </ul>
     </div>
     <div id="cv">
-      <img src="images/profile.jpg" alt="avatar" />
+      <img
+        style="
+          float: left;
+          margin-left: 10%;
+          height: 300px;
+          width: 300px;
+          border-radius: 100%;
+        "
+        src="images/profile.jpg"
+        alt="avatar"
+      />
       <div id="cv-text">
         <h2>Stefan Mitkovski</h2>
         <p><strong>Education:</strong></p>
         <ul>
           <li>High School: <strong>'Mihajlo Pupin Skopje'</strong></li>
-          <li>Faculty:<strong>'Faculty of Electrical Engineering and Information Technologies'</strong>
+          <li>
+            Faculty:<strong
+              >'Faculty of Electrical Engineering and Information
+              Technologies'</strong
+            >
           </li>
         </ul>
         <p style="max-width: 500px; min-width: 200px">
           Hey there and welcome to my site! My name is Stefan and am a collage
-          student from Skopje who likes coding and playing video games in his free
-          time.My favorite languages to code are PHP, javascript and java.I also
-          know how to use frameworks like laravel and bootstrap.If your interested
-          in my coding abilities be sure to check out my github page below.
+          student from Skopje who likes coding and playing video games in his
+          free time.My favorite languages to code are PHP, javascript and java.I
+          also know how to use frameworks like laravel and bootstrap.If your
+          interested in my coding abilities be sure to check out my github page
+          below.
         </p>
         <h2>Favorites</h2>
         <ul>
           <li>
             <strong>Films:</strong>
-            <a href="https://www.imdb.com/title/tt7631058/">Lord Of The Rings</a>,
+            <a href="https://www.imdb.com/title/tt7631058/">Lord Of The Rings</a
+            >,
             <a href="https://www.imdb.com/title/tt0068646/">The Godfather</a>,
             <a href="https://www.imdb.com/title/tt0128442/">Rounders</a>
           </li>
           <li>
-            <strong>Artists/Bands:</strong>
-            <a href="https://en.wikipedia.org/wiki/Gorillaz">Gorillaz</a>,  
-            <a href="https://en.wikipedia.org/wiki/Linkin_Park">Linking Park</a>,
-            <a href="https://en.wikipedia.org/wiki/Eminem">Eminem</a>
+            <strong>Bands:</strong>
+            <a href="https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ"
+              >Gorillaz</a
+            >,
+            <a href="https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz"
+              >Linking Park</a
+            >,
+            <a href="https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+              >SOAD</a
+            >
           </li>
           <li>
             <strong>Food:</strong>
-            <a href="https://www.google.com/search?q=ajvar&tbm=isch&ved=2ahUKEwj8lN_pwuPzAhUhkP0HHX51AekQ2-cCegQIABAA&oq=ajvar&gs_lcp=CgNpbWcQDFAAWABg6BpoAHAAeACAAQCIAQCSAQCYAQCqAQtnd3Mtd2l6LWltZw&sclient=img&ei=GJF1YfyoDaGg9u8P_uqFyA4&bih=583&biw=1366"
-              >Ajvar</a
-            >,
+            <a href="https://thefoodhog.com/ajvar-recipe/">Ajvar</a>,
+            <a href="https://www.allrecipes.com/recipe/211793/burek/">Burek</a>,
             <a
-              href="https://www.google.com/search?q=burek&hl=en-US&source=lnms&tbm=isch&sa=X&ved=2ahUKEwigkbKNw-PzAhUthf0HHd0NC8gQ_AUoAXoECAIQAw&biw=1366&bih=583&dpr=1"
-              >Burek</a
-            >,
-            <a
-              href="https://www.google.com/search?q=sarma&tbm=isch&ved=2ahUKEwiMz-eZw-PzAhVohP0HHU5gB5AQ2-cCegQIABAA&oq=sarma&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgAEENQhjNYrTlgpUBoAHAAeACAAWyIAc0EkgEDMy4zmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=fZF1YcycAeiI9u8PzsCdgAk&bih=583&biw=1366"
+              href="https://www.thespruceeats.com/serbian-stuffed-cabbage-recipe-sarma-1136569"
               >Sarma</a
             >
           </li>
         </ul>
+        <div id="show"></div>
       </div>
+      <script src="js/show.js"></script>
     </div>
 
     <div id="gallery">
@@ -72,110 +94,158 @@
       <div class="gallery-img">
         <h4>Book</h4>
         <img src="images/gallery1.jpg" alt="Image from gallery" /><br />
-        <p style="display: inline-block;">Likes: 1</p><br>
-        <button>Like</button><input type="text" /><button>Post</button>
+        <p style="display: inline-block">Likes: <span>0</span></p>
+        <br />
+        <button class="like">Like</button><input type="text" /><button>
+          Post
+        </button>
       </div>
       <div class="gallery-img">
         <h4>A deer in the wilderness</h4>
         <img src="images/gallery2.jpg" alt="Image from gallery" /><br />
-        <p style="display: inline-block;">Likes: 2</p><br>
-        <button>Like</button><input type="text" /><button>Post</button>
+        <p style="display: inline-block">Likes: <span>0</span></p>
+        <br />
+        <button class="like">Like</button><input type="text" /><button>
+          Post
+        </button>
       </div>
       <div class="gallery-img">
         <h4>Natures stairways</h4>
         <img src="images/gallery3.jpg" alt="Image from gallery" /><br />
-        <p style="display: inline-block;">Likes: 3</p><br>
-        <button>Like</button><input type="text" /><button>Post</button>
+        <p style="display: inline-block">Likes: <span>0</span></p>
+        <br />
+        <button class="like">Like</button><input type="text" /><button>
+          Post
+        </button>
       </div>
       <div class="gallery-img">
         <h4>Church of Our Lady before Týn</h4>
         <img src="images/gallery4.jpg" alt="Image from gallery" /><br />
-        <p style="display: inline-block;">Likes: 5</p><br>
-        <button>Like</button><input type="text" /><button>Post</button>
+        <p style="display: inline-block">Likes: <span>0</span></p>
+        <br />
+        <button class="like">Like</button><input type="text" /><button>
+          Post
+        </button>
       </div>
       <div class="gallery-img">
         <h4>A beatiful autumn day</h4>
         <img src="images/gallery5.jpg" alt="Image from gallery" /><br />
-        <p style="display: inline-block;">Likes: 8</p><br>
-        <button>Like</button><input type="text" /><button>Post</button>
+        <p style="display: inline-block">Likes: <span>0</span></p>
+        <br />
+        <button class="like">Like</button><input type="text" /><button>
+          Post
+        </button>
       </div>
       <div class="gallery-img">
         <h4>A swan</h4>
         <img src="images/gallery6.jpg" alt="Image from gallery" /><br />
-        <p style="display: inline-block;">Likes: 13</p><br>
-        <button>Like</button><input type="text" /><button>Post</button>
+        <p style="display: inline-block">Likes: <span>0</span></p>
+        <br />
+        <button class="like">Like</button><input type="text" /><button>
+          Post
+        </button>
       </div>
 
-      <form id="upload" action="" method="POST">
+      <script src="js/like.js"></script>
+
+      <div id="upload">
         <h1>Upload a picture</h1>
-        <label>Enter the title: </label><br>
-        <input type="text"><br><br>
-        <input type="file" /><br><br>
-        <button class="fancy-button">Upload</button>
-      </form>
+        <label>Enter the title: </label><br />
+        <input type="text" /><br /><br />
+        <input type="file" enctype="multipart/form-data" /><br /><br />
+        <p style="color: grey">Supportive extensions: JPEG and PNG</p>
+        <button class="fancy-button upload-gallery">Upload</button>
+      </div>
+
+      <script src="js/galleryUpload.js"></script>
     </div>
 
     <div id="blog">
       <h1>Blogs</h1>
 
-      <div class="blogging">
+      <article class="blogging">
         <h3>The Maturation of the Billionaire Boy-Man</h3>
-        <p style="color: grey;">Tech</p>
         <p>
-          If all goes as planned, Facebook will finally pull the trigger later this month on its long-salivated-over IPO.
-          The deal could value the company in the neighborhood of $100 billion,
-          making founder and CEO Mark Elliot Zuckerberg’s own unusually large stake worth $25 billion.
-          unpacked any thoughts.It is a huge sum, even in context. Zuckerberg’s impending fortune is 
-          more money than Wal-Mart’s 10,000-plus stores made last year.
+          If all goes as planned, Facebook will finally pull the trigger later
+          this month on its long-salivated-over IPO. The deal could value the
+          company in the neighborhood of $100 billion, making founder and CEO
+          Mark Elliot Zuckerberg’s own unusually large stake worth $25 billion.
+          unpacked any thoughts.It is a huge sum, even in context. Zuckerberg’s
+          impending fortune is more money than Wal-Mart’s 10,000-plus stores
+          made last year.
         </p>
-        <a class="fancy-button" href="https://nymag.com/news/features/mark-zuckerberg-2012-5/">Learn more</a>
-        <p style="color: grey">25/10/2021</p>
-      </div>
+        <a
+          class="fancy-button"
+          href="https://nymag.com/news/features/mark-zuckerberg-2012-5/"
+          >Learn more</a
+        >
+      </article>
 
-      <div class="blogging">
+      <article class="blogging">
         <h3>Torching the modern-day library od Alexandria</h3>
-        <p style="color: grey;">Tech</p>
         <p>
-          You were going to get one-click access to the full text of nearly every book that’s ever been published.
-          Books still in print you’d have to pay for, but everything else—a collection slated to grow larger than 
-          the holdings at the Library of Congress, Harvard, the University of Michigan, 
-          at any of the great national libraries of Europe—would have been available for free at terminals that 
-          were going to be placed in every local library that wanted one.
+          You were going to get one-click access to the full text of nearly
+          every book that’s ever been published. Books still in print you’d have
+          to pay for, but everything else—a collection slated to grow larger
+          than the holdings at the Library of Congress, Harvard, the University
+          of Michigan, at any of the great national libraries of Europe—would
+          have been available for free at terminals that were going to be placed
+          in every local library that wanted one.
         </p>
-        <a class="fancy-button" href="https://www.theatlantic.com/technology/archive/2017/04/the-tragedy-of-google-books/523320/">Learn more</a>
-        <p style="color: grey">25/10/2021</p>
-      </div>
+        <a
+          class="fancy-button"
+          href="https://www.theatlantic.com/technology/archive/2017/04/the-tragedy-of-google-books/523320/"
+          >Learn more</a
+        >
+      </article>
 
-      <div class="blogging">
-        <h3>The Heretic</h3><br>
-        <p style="color: grey;">Science</p>
+      <article class="blogging">
+        <h3>The Heretic</h3>
+        <br />
         <p>
-          At 9:30 in the morning, an architect and three senior scientists—two from Stanford,
-          the other from Hewlett-Packard—donned eyeshades and earphones, sank into comfy couches, 
-          and waited for their government-approved dose of LSD to kick in. From across the suite 
-          and with no small amount of anticipation, Dr. James Fadiman spun the knobs of an impeccable 
-          sound system and unleashed Beethoven’s “Symphony No. 6 in F Major, Op. 68.”
+          At 9:30 in the morning, an architect and three senior scientists—two
+          from Stanford, the other from Hewlett-Packard—donned eyeshades and
+          earphones, sank into comfy couches, and waited for their
+          government-approved dose of LSD to kick in. From across the suite and
+          with no small amount of anticipation, Dr. James Fadiman spun the knobs
+          of an impeccable sound system and unleashed Beethoven’s “Symphony No.
+          6 in F Major, Op. 68.”
         </p>
-        <a class="fancy-button" href="https://themorningnews.org/article/the-heretic">Learn more</a>
-        <p style="color: grey">25/10/2021</p>
-      </div>
+        <a
+          class="fancy-button"
+          href="https://themorningnews.org/article/the-heretic"
+          >Learn more</a
+        >
+      </article>
 
-      
       <div id="blog-form">
         <h1>Create a blog</h1>
-        <form>
-          <label>Title:</label><br />
-          <input style="width: 415px" type="text" name="title" placeholder="Enter the title of the blog"/><br />
-          <label>Body:</label><br />
-          <textarea name="body" cols="50" rows="10" placeholder="Enter the body of the blog"></textarea><br />
-          <a class="fancy-button" href="#">Create</a>
-        </form>
+        <label>Title:</label><br />
+        <input
+          style="width: 415px"
+          type="text"
+          placeholder="Enter the title of the blog"
+        /><br />
+        <label>Link:</label><br />
+        <input
+          style="width: 415px"
+          type="text"
+          placeholder="Enter the link for the reset of the article"
+        /><br />
+        <label>Body:</label><br />
+        <textarea
+          cols="50"
+          rows="10"
+          placeholder="Enter the body of the blog"
+        ></textarea
+        ><br />
+        <button class="fancy-button blog-create">Create</button>
+        <script src="js/createBlog.js"></script>
       </div>
     </div>
 
     <div id="survey">
       <h1>Survey</h1>
-      <form action="">
         <label>Name:</label>
         <input type="text" name="name" />
         <label>Email:</label>
@@ -198,104 +268,110 @@
         </label>
 
         <label>
-            <input type="radio" name="web-rating" value="good" />
-            Good
+          <input type="radio" name="web-rating" value="good" />
+          Good
         </label>
 
         <label>
           <input type="radio" name="web-rating" value="excellent" />
-          Excellent 
-        </label><br/><br/>
+          Excellent </label
+        ><br /><br />
 
         <label>How would you rate the questions on the survey: </label>
-        
+
         <label>
-            <input type="radio" name="questions-rating" value="awful" />
-            Awful
+          <input type="radio" name="questions-rating" value="awful" />
+          Awful
         </label>
 
         <label>
-            <input type="radio" name="questions-rating" value="bad" />
-            Bad
+          <input type="radio" name="questions-rating" value="bad" />
+          Bad
         </label>
 
         <label>
-            <input type="radio" name="questions-rating" value="average" />
-            Average
+          <input type="radio" name="questions-rating" value="average" />
+          Average
         </label>
 
         <label>
-            <input type="radio" name="questions-rating" value="good" />
-            Good
+          <input type="radio" name="questions-rating" value="good" />
+          Good
         </label>
 
         <label>
-            <input type="radio" name="questions-rating" value="excellent" />
-            Excellent
-        </label><br/><br>
+          <input type="radio" name="questions-rating" value="excellent" />
+          Excellent </label
+        ><br /><br />
 
         <label>Whitch section of this website did you like: </label>
-        
+
         <label>
-            <input type="checkbox" name="sections-liked" value="top" />
-            Top Section
+          <input type="checkbox" name="sections-liked" value="top" />
+          Top Section
         </label>
 
         <label>
-            <input type="checkbox" name="sections-liked" value="gallery" />
-            Gallery Section
+          <input type="checkbox" name="sections-liked" value="gallery" />
+          Gallery Section
         </label>
 
         <label>
-            <input type="checkbox" name="sections-liked" value="blog" />
-            Blog Section
+          <input type="checkbox" name="sections-liked" value="blog" />
+          Blog Section
         </label>
 
         <label>
-            <input type="checkbox" name="sections-liked" value="survey" />
-            Survey Section
-        </label><br><br>
+          <input type="checkbox" name="sections-liked" value="survey" />
+          Survey Section </label
+        ><br /><br />
 
         <label>Whitch section of this website did you dislike: </label>
-        
+
         <label>
-            <input type="checkbox" name="sections-disliked" value="top"/>
-            Top Section
+          <input type="checkbox" name="sections-disliked" value="top" />
+          Top Section
         </label>
 
         <label>
-            <input type="checkbox" name="sections-disliked" value="gallery" />
-            Gallery Section
+          <input type="checkbox" name="sections-disliked" value="gallery" />
+          Gallery Section
         </label>
 
         <label>
-            <input type="checkbox" name="sections-disliked" value="blog" />
-            Blog Section
+          <input type="checkbox" name="sections-disliked" value="blog" />
+          Blog Section
         </label>
 
         <label>
-            <input type="checkbox" name="sections-disliked" value="survey" />
-            Survey Section
-        </label><br><br>
+          <input type="checkbox" name="sections-disliked" value="survey" />
+          Survey Section </label
+        ><br /><br />
 
-        <label>How much did you spend taking the survey(in min):</label>
-        <input type="text"><br><br><br>
-
-        <label>Thoughts on how to improve the website: </label><br><br>
-        <textarea name="feedback"  cols="50" rows="5" placeholder="Your feedback goes here"></textarea><br><br>
-
-        <button class="fancy-button">Submit</button>
-      </form>
+        <label>Thoughts on how to improve the website: </label><br /><br />
+        <textarea
+          name="feedback"
+          cols="50"
+          rows="5"
+          placeholder="Your feedback goes here"
+        ></textarea
+        ><br /><br />
+        <button class="fancy-button submit-survey">Submit</button>
     </div>
-    
+
+    <script src="js/validateSurvey.js"></script>
+
     <div id="contact">
-        <h1>Contact Information</h1>
-        <a href="mailto:webmaster@gmail.com" class="fa fa-send fa-2x"></a>
-        <a href="https://www.facebook.com/" class="fa fa-facebook fa-2x"></a>
-        <a href="https://github.com/stefmitkovski" class="fa fa-github fa-2x"></a>
-        <a href="https://www.reddit.com/" class="fa fa-reddit fa-2x"></a>
-        <hr style="border-color: grey; width: 1000px;">
-        <p style="color: white;">&copy All rights reserved Stefan Mitkovski | Images: <a style="color: white;" href="https://pixabay.com/">Pixabay</a></p>
+      <h1>Contact Information</h1>
+      <a href="mailto:webmaster@gmail.com" class="fa fa-send fa-2x"></a>
+      <a href="https://www.facebook.com/" class="fa fa-facebook fa-2x"></a>
+      <a href="https://github.com/stefmitkovski" class="fa fa-github fa-2x"></a>
+      <a href="https://www.reddit.com/" class="fa fa-reddit fa-2x"></a>
+      <hr style="border-color: grey; width: 1000px" />
+      <p style="color: white">
+        &copy All rights reserved Stefan Mitkovski | Images:
+        <a style="color: white" href="https://pixabay.com/">Pixabay</a>
+      </p>
     </div>
   </body>
 </html>
