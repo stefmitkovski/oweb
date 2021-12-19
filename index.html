@@ -93,61 +93,79 @@
     <div id="gallery">
       <h1>Gallery</h1>
       <div class="gallery-img">
+        <button style="float: right">X</button>
         <h4>Book</h4>
         <img src="images/gallery1.jpg" alt="Image from gallery" /><br />
         <p style="display: inline-block">Likes: <span>0</span></p>
         <br />
-        <button class="like">Like</button><input type="text" /><button class="post">
+        <button class="like">Like</button><input type="text" /><button
+          class="post"
+        >
           Post
         </button>
         <div></div>
       </div>
       <div class="gallery-img">
+        <button style="float: right">X</button>
         <h4>A deer in the wilderness</h4>
         <img src="images/gallery2.jpg" alt="Image from gallery" /><br />
         <p style="display: inline-block">Likes: <span>0</span></p>
         <br />
-        <button class="like">Like</button><input type="text" /><button class="post">
+        <button class="like">Like</button><input type="text" /><button
+          class="post"
+        >
           Post
         </button>
         <div></div>
       </div>
       <div class="gallery-img">
+        <button style="float: right">X</button>
         <h4>Natures stairways</h4>
         <img src="images/gallery3.jpg" alt="Image from gallery" /><br />
         <p style="display: inline-block">Likes: <span>0</span></p>
         <br />
-        <button class="like">Like</button><input type="text" /><button class="post">
+        <button class="like">Like</button><input type="text" /><button
+          class="post"
+        >
           Post
         </button>
         <div></div>
       </div>
       <div class="gallery-img">
+        <button style="float: right">X</button>
         <h4>Church of Our Lady before Týn</h4>
         <img src="images/gallery4.jpg" alt="Image from gallery" /><br />
         <p style="display: inline-block">Likes: <span>0</span></p>
         <br />
-        <button class="like">Like</button><input type="text" /><button class="post">
+        <button class="like">Like</button><input type="text" /><button
+          class="post"
+        >
           Post
         </button>
         <div></div>
       </div>
       <div class="gallery-img">
+        <button style="float: right">X</button>
         <h4>A beatiful autumn day</h4>
         <img src="images/gallery5.jpg" alt="Image from gallery" /><br />
         <p style="display: inline-block">Likes: <span>0</span></p>
         <br />
-        <button class="like">Like</button><input type="text" /><button class="post">
+        <button class="like">Like</button><input type="text" /><button
+          class="post"
+        >
           Post
         </button>
         <div></div>
       </div>
       <div class="gallery-img">
+        <button style="float: right">X</button>
         <h4>A swan</h4>
         <img src="images/gallery6.jpg" alt="Image from gallery" /><br />
         <p style="display: inline-block">Likes: <span>0</span></p>
         <br />
-        <button class="like">Like</button><input type="text" /><button class="post">
+        <button class="like">Like</button><input type="text" /><button
+          class="post"
+        >
           Post
         </button>
         <div></div>
@@ -170,11 +188,10 @@
     <div id="blog">
       <h1>Blogs</h1>
 
-      <h1>Search
-        <br><input id="search-blog" type="text">
-      </h1>
+      <h1>Search <br /><input id="search-blog" type="text" /></h1>
 
       <article class="blogging">
+        <button style="float: right">X</button>
         <h3>The Maturation of the Billionaire Boy-Man</h3>
         <p>
           If all goes as planned, Facebook will finally pull the trigger later
@@ -193,6 +210,7 @@
       </article>
 
       <article class="blogging">
+        <button style="float: right">X</button>
         <h3>Torching the modern-day library od Alexandria</h3>
         <p>
           You were going to get one-click access to the full text of nearly
@@ -211,6 +229,7 @@
       </article>
 
       <article class="blogging">
+        <button style="float: right">X</button>
         <h3>The Heretic</h3>
         <br />
         <p>
@@ -229,15 +248,8 @@
         >
       </article>
 
-      <script>
-        $("#search-blog").on("keyup",function(){
-          var word = $(this).val().toLowerCase();
-          $(".blogging").filter(function(){
-            $(this).toggle($(this).find("h3").text().toLowerCase().indexOf(word) > -1);
-          })
-          // console.log($(this).find('h3').text());
-        })
-      </script>
+      <script src="js/searchBlog.js"></script>
+      <script src="js/removeContent.js"></script>
 
       <div id="blog-form">
         <h1>Create a blog</h1>
@@ -267,117 +279,121 @@
 
     <div id="survey">
       <h1>Survey</h1>
-        <label>Name:</label>
-        <input type="text" name="name" placeholder="Enter your name" />
-        <label>Email:</label>
-        <input type="text" name="email" placeholder="Enter your email" /><br /><br />
+      <label>Name:</label>
+      <input type="text" name="name" placeholder="Enter your name" />
+      <label>Email:</label>
+      <input
+        type="text"
+        name="email"
+        placeholder="Enter your email"
+      /><br /><br />
 
-        <label>How would you rate the design of the site: </label>
-        <label>
-          <input type="radio" name="web-rating" value="awful" />
-          Awful
-        </label>
+      <label>How would you rate the design of the site: </label>
+      <label>
+        <input type="radio" name="web-rating" value="awful" />
+        Awful
+      </label>
 
-        <label>
-          <input type="radio" name="web-rating" value="bad" />
-          Bad
-        </label>
+      <label>
+        <input type="radio" name="web-rating" value="bad" />
+        Bad
+      </label>
 
-        <label>
-          <input type="radio" name="web-rating" value="average" />
-          Average
-        </label>
+      <label>
+        <input type="radio" name="web-rating" value="average" />
+        Average
+      </label>
 
-        <label>
-          <input type="radio" name="web-rating" value="good" />
-          Good
-        </label>
+      <label>
+        <input type="radio" name="web-rating" value="good" />
+        Good
+      </label>
 
-        <label>
-          <input type="radio" name="web-rating" value="excellent" />
-          Excellent </label
-        ><br /><br />
+      <label>
+        <input type="radio" name="web-rating" value="excellent" />
+        Excellent </label
+      ><br /><br />
 
-        <label>How would you rate the questions on the survey: </label>
+      <label>How would you rate the questions on the survey: </label>
 
-        <label>
-          <input type="radio" name="questions-rating" value="awful" />
-          Awful
-        </label>
+      <label>
+        <input type="radio" name="questions-rating" value="awful" />
+        Awful
+      </label>
 
-        <label>
-          <input type="radio" name="questions-rating" value="bad" />
-          Bad
-        </label>
+      <label>
+        <input type="radio" name="questions-rating" value="bad" />
+        Bad
+      </label>
 
-        <label>
-          <input type="radio" name="questions-rating" value="average" />
-          Average
-        </label>
+      <label>
+        <input type="radio" name="questions-rating" value="average" />
+        Average
+      </label>
 
-        <label>
-          <input type="radio" name="questions-rating" value="good" />
-          Good
-        </label>
+      <label>
+        <input type="radio" name="questions-rating" value="good" />
+        Good
+      </label>
 
-        <label>
-          <input type="radio" name="questions-rating" value="excellent" />
-          Excellent </label
-        ><br /><br />
+      <label>
+        <input type="radio" name="questions-rating" value="excellent" />
+        Excellent </label
+      ><br /><br />
 
-        <label>Whitch section of this website did you like: </label>
+      <label>Whitch section of this website did you like: </label>
 
-        <label>
-          <input type="checkbox" name="sections-liked" value="top" />
-          Top Section
-        </label>
+      <label>
+        <input type="checkbox" name="sections-liked" value="top" />
+        Top Section
+      </label>
 
-        <label>
-          <input type="checkbox" name="sections-liked" value="gallery" />
-          Gallery Section
-        </label>
+      <label>
+        <input type="checkbox" name="sections-liked" value="gallery" />
+        Gallery Section
+      </label>
 
-        <label>
-          <input type="checkbox" name="sections-liked" value="blog" />
-          Blog Section
-        </label>
+      <label>
+        <input type="checkbox" name="sections-liked" value="blog" />
+        Blog Section
+      </label>
 
-        <label>
-          <input type="checkbox" name="sections-liked" value="survey" />
-          Survey Section </label
-        ><br /><br />
+      <label>
+        <input type="checkbox" name="sections-liked" value="survey" />
+        Survey Section </label
+      ><br /><br />
 
-        <label>Whitch section of this website did you dislike: </label>
+      <label>Whitch section of this website did you dislike: </label>
 
-        <label>
-          <input type="checkbox" name="sections-disliked" value="top" />
-          Top Section
-        </label>
+      <label>
+        <input type="checkbox" name="sections-disliked" value="top" />
+        Top Section
+      </label>
 
-        <label>
-          <input type="checkbox" name="sections-disliked" value="gallery" />
-          Gallery Section
-        </label>
+      <label>
+        <input type="checkbox" name="sections-disliked" value="gallery" />
+        Gallery Section
+      </label>
 
-        <label>
-          <input type="checkbox" name="sections-disliked" value="blog" />
-          Blog Section
-        </label>
+      <label>
+        <input type="checkbox" name="sections-disliked" value="blog" />
+        Blog Section
+      </label>
 
-        <label>
-          <input type="checkbox" name="sections-disliked" value="survey" />
-          Survey Section </label
-        ><br /><br />
+      <label>
+        <input type="checkbox" name="sections-disliked" value="survey" />
+        Survey Section </label
+      ><br /><br />
 
-        <label>Thoughts on how to improve the website: </label><br /><br />
-        <textarea
-          name="feedback"
-          cols="50"
-          rows="5"
-          placeholder="Your feedback goes here"
-        ></textarea
-        ><br /><br />
-        <button class="fancy-button submit-survey">Submit</button>
+      <label>Thoughts on how to improve the website: </label><br /><br />
+      <textarea
+        name="feedback"
+        cols="50"
+        rows="5"
+        placeholder="Your feedback goes here"
+      ></textarea
+      ><br /><br />
+      <button class="fancy-button submit-survey">Submit</button>
     </div>
 
     <script src="js/validateSurvey.js"></script>
