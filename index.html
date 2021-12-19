@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Stefan Mitkovski</title>
   </head>
   <body>
@@ -169,6 +170,10 @@
     <div id="blog">
       <h1>Blogs</h1>
 
+      <h1>Search
+        <br><input id="search-blog" type="text">
+      </h1>
+
       <article class="blogging">
         <h3>The Maturation of the Billionaire Boy-Man</h3>
         <p>
@@ -223,6 +228,16 @@
           >Learn more</a
         >
       </article>
+
+      <script>
+        $("#search-blog").on("keyup",function(){
+          var word = $(this).val().toLowerCase();
+          $(".blogging").filter(function(){
+            $(this).toggle($(this).find("h3").text().toLowerCase().indexOf(word) > -1);
+          })
+          // console.log($(this).find('h3').text());
+        })
+      </script>
 
       <div id="blog-form">
         <h1>Create a blog</h1>
