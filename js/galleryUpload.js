@@ -28,6 +28,11 @@ function upload() {
     var galleryImage = document.createElement("div");
     galleryImage.setAttribute("class","gallery-img");
 
+    var del = document.createElement("button");
+    del.setAttribute("style","float: right");
+    del.innerHTML = "X";
+    galleryImage.appendChild(del);
+
     var header = document.createElement("h4");
     header.innerHTML = title;
 
@@ -53,8 +58,6 @@ function upload() {
     likebtn = document.createElement("button");
     likebtn.setAttribute("class","like");
     likebtn.innerHTML = "Like";
-    likebtn.addEventListener("click", postLike, false);
-
     galleryImage.appendChild(likebtn);
 
     text = document.createElement("input");
@@ -65,8 +68,6 @@ function upload() {
     postbtn = document.createElement("button");
     postbtn.setAttribute("class","post");
     postbtn.innerHTML = "Post";
-    postbtn.addEventListener("click", post, false);
-
     galleryImage.appendChild(postbtn);
 
     galleryImage.appendChild(document.createElement("div"));

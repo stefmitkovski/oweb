@@ -29,6 +29,12 @@ function createBlog() {
     var newBlog = document.createElement("article");
     newBlog.setAttribute("class", "blogging");
 
+    var del = document.createElement("button");
+    del.setAttribute("style","float: right");
+    del.innerHTML = "X";
+    newBlog.appendChild(del);
+
+
     var titleBlog = document.createElement("h3");
     var titleText = document.createTextNode(title);
     titleBlog.appendChild(titleText);
