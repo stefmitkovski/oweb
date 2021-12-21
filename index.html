@@ -256,24 +256,32 @@
         <h1>Create a blog</h1>
         <label>Title:</label><br />
         <input
+          name="blog-title"
           style="width: 415px"
           type="text"
           placeholder="Enter the title of the blog"
         /><br />
         <label>Link:</label><br />
         <input
+          name="link"
           style="width: 415px"
           type="text"
           placeholder="Enter the link for the reset of the article"
         /><br />
         <label>Body:</label><br />
         <textarea
+          name="blog-body"
           cols="50"
           rows="10"
           placeholder="Enter the body of the blog"
         ></textarea
         ><br />
+        <label>
+          <input type="checkbox" name="autogenerate">
+          Auto generate an article from the entered link
+        </label><br>
         <button class="fancy-button blog-create">Create</button>
+        <script src="js/autogenerate.js"></script>
         <script src="js/createBlog.js"></script>
       </div>
     </div>
